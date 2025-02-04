@@ -1,0 +1,65 @@
+@import url("reset.css");
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(20, 20, 20);
+    color: #000000;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(../img/jacek-smoter-guhKZly2fVM-unsplash.jpg);
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+.quote-container {
+    border: .25rem solid rgb(2, 70, 40);
+    width: 90dvw;
+    height: 90dvh;
+    margin: auto;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote-text {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem;
+    background-color:rgba(255, 228, 196, 0.418);
+    border: 1rem solid rgba(2, 70, 41, 0.512);
+    border-radius: 2rem;
+
+}
+.author {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2rem;
+    
+}
+
+.quote-text::before {
+    content: open-quote;
+    font-size: 3rem;
+    padding: 0rem;
+
+}
+
+.quote-text::after {
+    content: close-quote;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    align-self: flex-end;
+
+
+}
