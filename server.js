@@ -7,7 +7,7 @@ const port = 1776;
 
 //serves the front-end content of the directory
 
-app.use("", express.static(path.join(__dirname, "./public")))
+app.use("", express.static(path.join(__dirname, "./public")));
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
