@@ -6,18 +6,32 @@ body {
     background-color: rgb(20, 20, 20);
     color: #000000;
     font-family: 'Times New Roman', Times, serif;
-    background-image: url(../img/jacek-smoter-guhKZly2fVM-unsplash.jpg);
+
 }
 
 .main {
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding: 1rem;
 }
 
-
+.background-img {
+    background-image: url("../img/jacek-smoter-guhKZly2fVM-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: .3;
+    z-index: -999;
+}
 .quote-container {
-    border: .25rem solid rgb(2, 70, 40);
+    border: .25rem solid rgba(1, 0, 0, 0.607);
     width: 90dvw;
     height: 90dvh;
     margin: auto;
@@ -33,18 +47,24 @@ body {
     flex-direction: column;
     margin: auto;
     padding: 2rem;
-    background-color:rgba(255, 228, 196, 0.418);
-    border: 1rem solid rgba(2, 70, 41, 0.512);
-    border-radius: 2rem;
+    border-radius: 1rem;
+    background-color:rgba(255, 228, 196, 0.155);
+    
 
 }
 .author {
-    font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 2rem;
+   
     
+}
+
+.author-text {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
 }
 
 .quote-text::before {
